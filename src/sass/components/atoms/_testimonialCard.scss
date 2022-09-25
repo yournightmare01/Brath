@@ -1,0 +1,100 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  text-align: center;
+  flex-shrink: 1;
+  color: $text-color-dark;
+
+  &__description {
+    max-width: 25rem;
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+  }
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-button-next {
+  right: 193px;
+  background-image: url('../../../assets/images/rightArrow.png');
+}
+
+.swiper-button-prev {
+  left: 193px;
+  background-image: url('../../../assets/images/leftArrow.png');
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.mySwiper .swiper-slide-next {
+  width: 356px !important;
+}
+
+.swiper-slide {
+  width: 17rem;
+  height: 32rem;
+}
+
+.swiper-slide-active {
+  width: 26rem;
+  height: 40rem;
+}
+
+.swiper-slide-active .testimonial {
+  background-color: #2d2d2d;
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 11rem;
+
+    &__barbecue {
+      background-image: url('../../../assets/images/grill.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 7rem;
+      height: 7rem;
+    }
+
+    &__stars {
+      background-image: url('../../../assets/images/stars.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 9rem;
+      height: 3rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    max-width: 31rem;
+    margin-bottom: 2rem;
+    line-height: 2.3rem;
+    color: $text-color-light;
+  }
+
+  &__author {
+    font-size: 1.3rem;
+    max-width: 11rem;
+  }
+}

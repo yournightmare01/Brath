@@ -1,0 +1,8 @@
+.social-media-icon {
+  width: 4rem;
+  height: 4rem;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  margin-left: auto;
+
+  &__link {
+    margin-left: 3rem;
+    color: $text-color-light;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 9.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(70%);
+    }
+  }
+}

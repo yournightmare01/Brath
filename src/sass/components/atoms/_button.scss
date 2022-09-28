@@ -41,3 +41,19 @@
     outline: none;
   }
 }
+
+.login-button {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+  }
+}

@@ -26,10 +26,30 @@ const MealAssortment = () => {
       </div>
       <div className='meal-assortment__gallery fluid'>
         <div className='meal-assortment__logo logo-secondary'></div>
-        <img width='24%' src={meal1} alt='meal1' />
-        <img width='24%' src={meal2} alt='meal2' />
-        <img width='24%' src={meal3} alt='meal3' />
-        <img width='24%' src={meal4} alt='meal4' />
+
+        <div
+          className='meal-assortment__gallery__image-container'
+          style={{
+            width: '49%',
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
+          <img width='48%' src={meal1} alt='meal3' />
+          <img width='48%' src={meal2} alt='meal4' />
+        </div>
+
+        <div
+          className='meal-assortment__gallery__image-container'
+          style={{
+            width: '49%',
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
+          <img width='48%' src={meal3} alt='meal3' />
+          <img width='48%' src={meal4} alt='meal4' />
+        </div>
       </div>
     </section>
   );

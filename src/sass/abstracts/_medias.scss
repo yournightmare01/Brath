@@ -1,0 +1,153 @@
+@media only screen and (max-width: $bp-small) {
+  .input-login {
+    width: 25rem;
+  }
+
+  .btn-submit {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: $bp-largest) {
+  .hero-section {
+    height: 49rem !important;
+  }
+
+  .fluid {
+    padding: 0 2rem !important;
+  }
+
+  .nav__link:not(:nth-child(9)) {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 8em;
+    height: 3rem;
+
+    &__line {
+      width: 60%;
+      height: 17%;
+      background-color: white;
+      border-radius: 1rem;
+    }
+  }
+
+  .login {
+    height: 100%;
+  }
+
+  .login,
+  .login__wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .meal-assortment {
+    height: calc(100vh + 42rem) !important;
+
+    &__content {
+      height: 36% !important;
+    }
+
+    &__gallery {
+      flex-direction: column;
+      justify-content: space-between !important;
+      height: 58% !important;
+      padding: 9.5rem 0 !important;
+      margin-top: 5rem !important;
+
+      &__image-container {
+        width: 100% !important;
+
+        & img {
+          width: 48% !important;
+        }
+      }
+    }
+  }
+
+  html {
+    font-size: 57.5% !important;
+  }
+
+  .hero-section {
+    height: 42rem !important;
+  }
+
+  .title {
+    display: none !important;
+  }
+
+  .dry-aged {
+    flex-direction: column-reverse;
+    margin: 0 !important;
+    height: 78rem !important;
+
+    &__gallery {
+      margin-left: 0 !important;
+    }
+
+    &__content {
+      max-width: 65% !important;
+      text-align: center;
+
+      &__btn-group {
+        margin: 0 !important;
+        padding: 3rem 0;
+      }
+    }
+  }
+
+  .grill-course {
+    height: 67rem !important;
+    text-align: center !important;
+
+    &__container {
+      width: 100% !important;
+      height: 54% !important;
+      justify-content: center;
+    }
+
+    &__image-container {
+      &--image {
+        width: 100% !important;
+        height: 31rem !important;
+        top: 36rem !important;
+      }
+    }
+  }
+
+  .bullet-paragraph {
+    margin: 0.8rem auto 0 auto !important;
+  }
+
+  .meal-assortment {
+    height: calc(100vh + 42rem) !important;
+
+    &__content {
+      height: 36% !important;
+    }
+
+    &__gallery {
+      flex-direction: column;
+      justify-content: space-between !important;
+      height: 58% !important;
+      padding: 9.5rem 0 !important;
+      margin-top: 5rem !important;
+
+      &__image-container {
+        width: 100% !important;
+
+        & img {
+          width: 48% !important;
+        }
+      }
+    }
+  }
+}

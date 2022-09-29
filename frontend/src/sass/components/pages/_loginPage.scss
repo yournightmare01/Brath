@@ -1,0 +1,64 @@
+.background {
+  align-items: center;
+  display: flex;
+  position: relative;
+  background-color: #63210c;
+  width: 100vw;
+  height: 100vh;
+  min-height: 70rem;
+}
+
+.login {
+  display: flex;
+  background-image: url('../../../assets/images/restaurant.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140rem;
+  height: 70rem;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px 3px #00000080;
+  border-radius: 1rem;
+
+  &__wrapper {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #63210ce8;
+
+    &__form-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+}
+
+.input-login {
+  width: 33rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.6rem;
+  outline: none;
+  font-family: 'Poppins';
+  font-weight: 300;
+  color: white;
+  margin-top: 3rem;
+
+  &::placeholder {
+    color: white;
+  }
+}

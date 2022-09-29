@@ -1,0 +1,354 @@
+@media only screen and (max-width: $bp-largest) {
+  .hero-section {
+    height: 49rem !important;
+  }
+
+  .fluid {
+    padding: 0 2rem !important;
+  }
+
+  .nav__link:not(:nth-child(9)) {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 8em;
+    height: 3rem;
+
+    &__line {
+      width: 60%;
+      height: 17%;
+      background-color: white;
+      border-radius: 1rem;
+    }
+  }
+
+  .login {
+    height: 100%;
+  }
+
+  .login,
+  .login__wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .meal-assortment {
+    height: calc(100vh + 55rem) !important;
+    padding: 4rem 0 0rem 0;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 42% !important;
+    }
+
+    &__title {
+      max-width: 64%;
+      text-align: center;
+      font-size: 2.3rem;
+      color: #ffff;
+      margin-top: 2rem;
+    }
+
+    &__description {
+      max-width: 65% !important;
+      font-size: 1.6rem !important;
+      text-align: center !important;
+      padding: 5rem 0 3rem 0 !important;
+      color: #d8d8d8;
+    }
+
+    &__gallery {
+      flex-direction: column;
+      justify-content: space-between !important;
+      height: 58% !important;
+      padding: 9.5rem 0 !important;
+      margin-top: 5rem !important;
+
+      &__image-container {
+        width: 100% !important;
+
+        & img {
+          width: 48% !important;
+        }
+      }
+    }
+  }
+
+  html {
+    font-size: 57.5% !important;
+  }
+
+  .hero-section {
+    height: 42rem !important;
+  }
+
+  .title {
+    display: none !important;
+  }
+
+  .dry-aged {
+    flex-direction: column-reverse;
+    margin: 0 !important;
+    height: 82rem !important;
+
+    &__gallery {
+      margin-left: 0 !important;
+    }
+
+    &__content {
+      max-width: 65% !important;
+      text-align: center;
+
+      &__btn-group {
+        margin: 0 !important;
+        padding: 4rem 0 6rem 0;
+      }
+    }
+  }
+
+  .grill-course {
+    height: 67rem !important;
+    text-align: center !important;
+
+    &__container {
+      width: 100% !important;
+      height: 54% !important;
+      justify-content: center;
+    }
+
+    &__image-container {
+      &--image {
+        width: 100% !important;
+        height: 31rem !important;
+        top: 36rem !important;
+      }
+    }
+  }
+
+  .bullet-paragraph {
+    margin: 0.8rem auto 0 auto !important;
+  }
+
+  .meal-assortment {
+    height: calc(100vh + 42rem) !important;
+
+    &__content {
+      height: 41% !important;
+    }
+
+    &__gallery {
+      flex-direction: column;
+      justify-content: space-between !important;
+      height: 51% !important;
+      padding: 6.5rem 0 3rem 0px !important;
+      margin-top: 5rem !important;
+
+      &__image-container {
+        width: 100% !important;
+
+        & img {
+          width: 48% !important;
+        }
+      }
+    }
+  }
+
+  .spices {
+    height: 72rem !important;
+
+    &__image {
+      height: 32rem !important;
+      top: 40rem !important;
+      width: 100% !important;
+    }
+
+    &__container {
+      &__content {
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: unset !important;
+      }
+
+      &__text {
+        text-align: center !important;
+        margin-top: 2.5rem !important;
+      }
+    }
+  }
+
+  .jre-network {
+    height: 59rem !important;
+
+    &__container {
+      flex-direction: column !important;
+      justify-content: space-evenly !important;
+      text-align: center !important;
+    }
+
+    &__content {
+      justify-content: center !important;
+
+      &__container {
+        align-items: center !important;
+      }
+    }
+  }
+
+  .awards {
+    height: 80rem !important;
+    &__container {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+
+    &__content {
+      width: unset !important;
+      align-items: flex-end !important;
+      height: 32% !important;
+    }
+
+    &__cards-container {
+      justify-content: space-between !important;
+      flex-direction: column !important;
+      padding-bottom: 15rem !important;
+      padding-top: 6rem !important;
+      height: 100% !important;
+
+      &__wrapper {
+        display: flex !important;
+        width: 33.6rem !important;
+        justify-content: space-between !important;
+      }
+    }
+  }
+
+  .award-card {
+    margin: 0 !important;
+  }
+
+  .pre-footer {
+    height: 45rem !important;
+    padding: 3rem 0 !important;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__info {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 50% !important;
+      height: 26% !important;
+      padding-bottom: 4rem !important;
+      text-align: center;
+    }
+
+    & img {
+      display: none;
+    }
+
+    &__logo {
+      height: 50% !important;
+    }
+
+    &__social-media {
+      flex-direction: column;
+      padding: 4rem 0 2rem 0 !important;
+      width: 47% !important;
+      height: 65% !important;
+
+      & p {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  .mySwiper {
+    width: 40% !important;
+    overflow: hidden !important;
+
+    & .swiper-button-next {
+      right: 7px;
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+
+    & .swiper-button-prev {
+      left: 7px;
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+
+  .swiper-pagination {
+    display: none !important;
+  }
+
+  .footer {
+    display: flex;
+    height: 10rem !important;
+
+    &__container {
+      flex-direction: column;
+      justify-content: space-evenly !important;
+    }
+  }
+
+  .testimonial {
+    &__description {
+      font-size: 1.2rem !important;
+      margin: 3rem 0 0 0 !important;
+    }
+  }
+
+  .about-brath {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .hero-section {
+    height: 32rem !important;
+  }
+
+  .dry-aged {
+    &__content {
+      padding-top: 1rem;
+    }
+  }
+
+  .testimonial {
+    &__description {
+      font-size: 1rem !important;
+      line-height: 2.1rem !important;
+    }
+  }
+
+  .mySwiper2 .swiper-button-next {
+    display: none !important;
+  }
+  .mySwiper2 .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .input-login {
+    width: 25rem;
+  }
+
+  .btn-submit {
+    width: 25rem;
+  }
+}

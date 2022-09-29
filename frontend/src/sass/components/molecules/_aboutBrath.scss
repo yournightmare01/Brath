@@ -1,0 +1,30 @@
+.about-brath {
+  display: none;
+  width: 100%;
+  height: 30rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 65%;
+    text-align: center;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 62%;
+
+    & h1 {
+      max-width: 29rem;
+      font-size: 3rem;
+      color: white;
+      line-height: 4.2rem;
+    }
+  }
+}

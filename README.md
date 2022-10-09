@@ -17,5 +17,6 @@ APPLICATION STARTUP INSTRUCTIONS
 --------------------------------
 
 -Navigate to the 'frontend' folder.
+
 -Open your terminal -In terminal type: 'npm install' and wait for the installation to finish
 

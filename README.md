@@ -16,5 +16,6 @@ In order to run the app you will need to have the following tools installed on y
 APPLICATION STARTUP INSTRUCTIONS
 --------------------------------
 
--Navigate to the 'frontend' folder. -Open your terminal -In terminal type: 'npm install' and wait for the installation to finish
+-Navigate to the 'frontend' folder.
+-Open your terminal -In terminal type: 'npm install' and wait for the installation to finish
 

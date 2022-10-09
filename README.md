@@ -21,7 +21,7 @@ APPLICATION STARTUP INSTRUCTIONS
 
 -Open your terminal, in terminal type: 'npm install' and wait for the installation to finish.
 
--In that same folder, in terminal type: 'npm start' and wait for the application to start running.
+-In that same folder (Brath), in terminal type: 'npm start' and wait for the application to start running.
 
 Your application should start running on 'http://localhost:3000'.
 

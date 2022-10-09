@@ -1,4 +1,5 @@
 /////////// READ ME FIRST! ///////////
+--------------------------------------
 This is a website about famous Dutch Butcher "Heiko Brath"
 
 In order to access the website you will need to type in the right username and password.

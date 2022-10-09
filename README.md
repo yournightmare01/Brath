@@ -15,11 +15,9 @@ In order to run the app you will need to have the following tools installed on y
 APPLICATION STARTUP INSTRUCTIONS
 --------------------------------
 
--Navigate to the 'Brath' folder.
+1) navigate to Brath folder
+2) Open your terminal, in terminal type: `npm install` and wait for the installation to finish.
+3) In that same folder (Brath), in terminal type: `npm start` and wait for the application to start running.
 
--Open your terminal, in terminal type: 'npm install' and wait for the installation to finish.
-
--In that same folder (Brath), in terminal type: 'npm start' and wait for the application to start running.
-
-Your application should start running on 'http://localhost:3000'.
+Your application should start running on `http://localhost:3000`.
 

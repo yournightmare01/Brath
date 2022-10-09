@@ -1,0 +1,21 @@
+.hero-section {
+  display: flex;
+  height: 57rem;
+  position: relative;
+
+  &__about {
+    max-width: 27rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 5rem;
+    padding: 5rem 0;
+    height: 100%;
+    justify-content: space-around;
+
+    & h1 {
+      font-size: 2.8rem;
+      line-height: 4rem;
+    }
+  }
+}

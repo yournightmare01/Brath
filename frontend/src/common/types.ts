@@ -6,3 +6,9 @@ export type SvgProps = {
 };
 
 export type InputType = 'text' | 'password' | 'email';
+
+export type LoginUserResponse = {
+  id: number;
+  accessToken: string;
+  username: string;
+};

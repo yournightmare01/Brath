@@ -1,13 +1,18 @@
 import axios from 'axios';
+import { LoginUserResponse } from '../common/types';
 
-type Creds = {
-  email: string;
+type LoginUserRequest = {
+  username: string;
   password: string;
 };
+
 const AuthService = {
-  loginUser: async ({ email, password }: Creds) => {
-    const response = await axios.post('http://localhost:1337/api/auth/local', {
-      identifier: email,
+  loginUser: async ({
+    username,
+    password,
+  }: LoginUserRequest): Promise<LoginUserResponse> => {
+    const response = await axios.post('/', {
+      username,
       password,
     });
     return response.data;

@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
-
-import axios from 'axios';
 
 import Button from '../../atoms/button/Button';
 import Input from '../../atoms/input/Input';
@@ -11,15 +9,13 @@ import AuthService from '../../../services/authService';
 
 const LoginPage = () => {
   const initialLoginValues = {
-    email: '',
+    username: '',
     password: '',
   };
 
   const [loginValues, setLoginValues] = useState(initialLoginValues);
 
   const navigate = useNavigate();
-
-  let loginNotValid = true;
 
   const handleInputChange = (e: React.FormEvent<HTMLInputElement>) => {
     const { name, value } = e.currentTarget;
@@ -29,36 +25,14 @@ const LoginPage = () => {
     });
   };
 
-  // const validateUser = async (e: any) => {
-  //   try {
-  //     e.preventDefault();
-
-  //     const response = await axios.post(
-  //       'http://localhost:1337/api/auth/local',
-  //       {
-  //         identifier: loginValues.email,
-  //         password: loginValues.password,
-  //       }
-  //     );
-
-  //     const data = response.data;
-
-  //     LocalStorageService.addUser(data.)
-
-  //     return data;
-  //   } catch (error) {
-  //     return console.error(error);
-  //   } finally {
-  //     setLoginValues(initialLoginValues);
-  //   }
-  // };
-
-  const validateUser = async (e: any) => {
+  const validateUser = async (e: React.SyntheticEvent) => {
     try {
       e.preventDefault();
 
-      const user = await AuthService.loginUser(loginValues);
-      const token = user.jwt;
+      const { username, password } = loginValues;
+
+      const user = await AuthService.loginUser({ username, password });
+      const token = user.accessToken;
 
       if (token) {
         LocalStorageService.addUser(token);
@@ -69,9 +43,8 @@ const LoginPage = () => {
     }
   };
 
-  if (loginValues.email.length >= 10 && loginValues.password.length >= 5) {
-    loginNotValid = false;
-  }
+  const loginNotValid =
+    loginValues.username.length <= 4 && loginValues.password.length <= 5;
 
   return (
     <div className='form'>
@@ -85,12 +58,12 @@ const LoginPage = () => {
                 className='login__container__form-container'
               >
                 <Input
-                  type='email'
+                  type='text'
                   className='input-login'
                   placeholder='yourmail@example.com'
                   onChange={handleInputChange}
-                  name='email'
-                  value={loginValues.email}
+                  name='username'
+                  value={loginValues.username}
                 />
                 <Input
                   type='password'
